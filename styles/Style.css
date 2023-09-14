@@ -12,6 +12,7 @@ Color pallete
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+
 }
 
 /*Main div waar alles in geplaats kan worden*/
@@ -111,6 +112,16 @@ Color pallete
     height: 100%;
     width: 20%;
 }
+
+img {
+    width:5.5em;
+    height:5.5em;
+    border-radius: 50%;
+    margin-top: 1em;
+    margin-left: 1em;
+    
+  }
+
 
 /*Body*/
 body{
