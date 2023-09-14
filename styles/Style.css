@@ -1,3 +1,12 @@
+/*
+Color pallete
+1: Gunmetal = #092327
+2: Dark slate gray = #0B5351 
+3: light sea green = #00A9A5
+4: Air Force Blue = #4E8098
+5: Light Sky Blue = #90C2E7
+*/
+
 *{
     padding: 0;
     margin: 0;
@@ -5,76 +14,239 @@
     font-family: sans-serif;
 }
 
+/*Main div waar alles in geplaats kan worden*/
+.maincontainer{
+    height: 100%;
+    width: 100%;
+}
+
+/*Header boven aan de pagina verdeeld in 3 divs: logo, title en searchbar*/
 .header{
    height: 15vh;
     width: 100%;
-
+    background: #092327;
+    display: flex;
 }
 
-
-header{
-    background-color: aqua;
+.logo-fdnd{
     display: flex;
+    height: 100%;
+    width: 20%;
+    font-size: 3em;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
+}
+
+.logo-fdnd h1 {
+    position: absolute;
+}
+
+.logo-fdnd h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #90C2E7;
+}
+
+.logo-fdnd h1:nth-child(2){
+    color: #90C2E7;
+    animation: animate-1 4s ease-in-out infinite;
+}
+
+.title{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    position: absolute;
+}
+
+.title h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #90C2E7;
+}
+
+.title h1:nth-child(2){
+    color: #90C2E7;
+    animation: animate-1 4s ease-in-out infinite;
+}
+
+/*animatie Header Text*/
+@keyframes animate-1 {
+    0%,
+    100% {
+        clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+.searchbox{
+    height: 100%;
+    width: 20%;
 }
 
 /*Body*/
 body{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/bodyBackground.jpg");
+    background-image: linear-gradient(0deg, #182848, #90C2E7);
+    overflow-x: hidden;
 }
 
-.bubblesIMG{
-    width: 500px;
-    height: 500px;
-    padding: 4rem;
-    margin: 1rem;
-    border-radius: 50%;
-    /*box-shadow: 0px 2px 2px 4px lightblue;*/
+h2{
+    font-size: 2.8em;
 }
 
-/*.bubblesIMG:hover{*/
-/*    background-color: lightskyblue;*/
-/*    transition: 1s;*/
-/*}*/
+.midcontent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
 
-.bubbles{
+/*profile rows*/
+.row{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    height: 32em;
+}
+
+.left-row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33.33%;
+}
+
+.left-row-top{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 5em;
+    width: 100%;
 }
 
-.newRow{
-    flex-basis: 100%;
-    height: 0;
+.left-row-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 100%;
+}
+
+.left-row-bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    height: 5em;
+    width: 100%;
+}
+
+.mid-row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33.33%;
+}
+
+.mid-row-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+}
+
+.mid-row-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 100%;
+}
+
+.mid-row-bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    height: 5em;
+    width: 100%;
+}
+
+.right-row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33.33%;
+}
+
+.right-row-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+}
+
+.right-row-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20em;
+    width: 100%;
+}
+
+.right-row-bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    height: 5em;
+    width: 100%;
 }
 
 
+/*profile bubbels*/
+.bubble{
+    height: 20em;
+    width: 20em;
+    border-radius: 10em ;
 
-
-/*bubble*/
-/*body {*/
-/*    background: #e0e0e0;*/
-/*}*/
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.blob {
-    width: 500px;
-    height: 500px;
     border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
     background: transparent;
     box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0, 10px 20px 20px 0px #c9c9c9;
 }
 
-.blob::before {
+.bubble::before {
     content: '';
     position: absolute;
     border-radius: 37% 54% 46% 46%;
@@ -86,7 +258,7 @@ body{
     left: 20px;
 }
 
-.blob::after {
+.bubble::after {
     content: '';
     position: absolute;
     border-radius: 50%;
@@ -95,4 +267,145 @@ body{
     height: 10px;
     top: 60px;
     left: 20px;
+}
+
+
+.button{
+    height: 2.5em;
+    width: 8em;
+    margin: 5em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+}
+
+/*Lucht Bubbel Animatie*/
+.wrapper div{
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 6s linear infinite;
+}
+
+div .dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.wrapper div:nth-child(1){
+    top: 5%;
+    left: 6.25%;
+    animation: animate 4s linear infinite;
+}
+
+.wrapper div:nth-child(2){
+    top: 30%;
+    left: 12.5%;
+    animation: animate 5s linear infinite;
+}
+
+.wrapper div:nth-child(3){
+    top: 40%;
+    left: 18.75%;
+    animation: animate 8s linear infinite;
+}
+
+.wrapper div:nth-child(4){
+    top: 33%;
+    left: 25%;
+    animation: animate 5s linear infinite;
+}
+
+.wrapper div:nth-child(5){
+    top: 34%;
+    left: 31.25%;
+    animation: animate 9s linear infinite;
+}
+
+.wrapper div:nth-child(6){
+    top: 38%;
+    left: 37.5%;
+    animation: animate 5s linear infinite;
+}
+
+.wrapper div:nth-child(7){
+    top: 42%;
+    left: 43.75%;
+    animation: animate 8s linear infinite;
+}
+
+.wrapper div:nth-child(8){
+    top: 55%;
+    left: 50%;
+    animation: animate 4s linear infinite;
+}
+
+.wrapper div:nth-child(9){
+    top: 63%;
+    left: 56.25%;
+    animation: animate 6s linear infinite;
+}
+
+.wrapper div:nth-child(10){
+    top: 44%;
+    left: 62.5%;
+    animation: animate 8s linear infinite;
+}
+
+.wrapper div:nth-child(11){
+    top: 36%;
+    left: 68.75%;
+    animation: animate 3s linear infinite;
+}
+
+.wrapper div:nth-child(12){
+    top: 34%;
+    left: 75%;
+    animation: animate 6s linear infinite;
+}
+
+.wrapper div:nth-child(13){
+    top: 37%;
+    left: 81.25%;
+    animation: animate 9s linear infinite;
+}
+
+.wrapper div:nth-child(14){
+    top: 28%;
+    left: 87.5%;
+    animation: animate 5s linear infinite;
+}
+
+.wrapper div:nth-child(15){
+    top: 55%;
+    left: 93.75%;
+    animation: animate 8s linear infinite;
+}
+
+.wrapper div:nth-child(16){
+    top: 100%;
+    left: 100%;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100%{
+        transform: scale(1.5) translateY(-200px) rotate(360deg);
+    }
+    
 }
