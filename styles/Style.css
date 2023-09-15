@@ -131,6 +131,9 @@ body{
 
 h2{
     font-size: 2.8em;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .midcontent{
@@ -146,7 +149,7 @@ h2{
     margin-top: 1em;
     margin-left: 2em;
     margin-right: 2em;
-    height: 32em;
+    height: 27em;
 }
 
 .left-row{
@@ -169,15 +172,6 @@ h2{
     justify-content: center;
     align-items: center;
     height: 20em;
-    width: 100%;
-}
-
-.left-row-bot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    height: 5em;
     width: 100%;
 }
 
@@ -204,15 +198,6 @@ h2{
     width: 100%;
 }
 
-.mid-row-bot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    height: 5em;
-    width: 100%;
-}
-
 .right-row{
     display: flex;
     flex-direction: column;
@@ -236,16 +221,6 @@ h2{
     width: 100%;
 }
 
-.right-row-bot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1em;
-    height: 5em;
-    width: 100%;
-}
-
-
 /*profile bubbels*/
 .bubble{
     height: 16em;
@@ -256,6 +231,7 @@ h2{
     background: transparent;
     box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0, 10px 20px 20px 0px #c9c9c9;
 }
+
 
 .ball.bubble:hover{
     background-color: white;
@@ -299,6 +275,7 @@ h2{
     backdrop-filter: blur(30px);
     color: rgba(255,255,255,0.8);
 }
+
 
 /*Lucht Bubbel Animatie*/
 .wrapper div{
@@ -429,10 +406,6 @@ div .dot{
 }
 
 
-
-
-
-
 .ball {
     display: inline-block;
     width: 100%;
@@ -440,6 +413,7 @@ div .dot{
     border-radius: 100%;
     position: relative;
     background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); }
+
 .ball:before {
     content: "";
     position: absolute;
@@ -561,6 +535,7 @@ div .dot{
         -webkit-transform: scale(1);
         transform: scale(1); } }
 
+
 /* Voeg deze CSS-regels toe aan je bestand voor de popup-stijl */
 
 /* Verberg de popup op het begin */
@@ -621,5 +596,12 @@ div .dot{
     background-color: rgba(0, 0, 0, 0.8); /* Zwarte overlay met wat transparantie */
     z-index: 999; /* Zet het bovenop de popup-content */
     display: none; /* Verberg het standaard */
+}
+
+
+.footer{
+height: 10em;
+width: 100vw;
+background: #092327;
 }
 
