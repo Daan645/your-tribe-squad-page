@@ -257,6 +257,13 @@ h2{
     box-shadow: inset 6px 33px 20px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0, 10px 20px 20px 0px #c9c9c9;
 }
 
+.ball.bubble:hover{
+    background-color: white;
+    transition: 1s;
+}
+
+
+
 /*.bubble::before {*/
 /*    content: '';*/
 /*    position: absolute;*/
@@ -553,3 +560,66 @@ div .dot{
     97%, 100% {
         -webkit-transform: scale(1);
         transform: scale(1); } }
+
+/* Voeg deze CSS-regels toe aan je bestand voor de popup-stijl */
+
+/* Verberg de popup op het begin */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 9999;
+}
+
+/* Style voor de inhoud van de popup */
+/* Style voor de inhoud van de popup */
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Hier kun je de gewenste achtergrondkleur instellen */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+/* Laat de popup zien wanneer de klasse 'show' is toegevoegd */
+.popup.show {
+    display: block;
+}
+
+
+
+
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.popup-zoom-in {
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Zwarte overlay met wat transparantie */
+    z-index: 999; /* Zet het bovenop de popup-content */
+    display: none; /* Verberg het standaard */
+}
+

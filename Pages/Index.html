@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+
+
+
     <link rel="stylesheet" href="../styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -31,9 +35,11 @@
                     </div>
                     <div class="left-row-mid">
                         <section class="stage">
-                            <a href="https://annevd.github.io/your-tribe-profile-card/"  target="_blank"><figure class="ball bubble">
-                                <img class ="bubble" src="../img/Anne.png" alt="">
-                            </figure></a>
+                           <figure class="ball bubble">
+
+                               <img class="bubble" src="../img/Anne.png" alt="" id="popup-trigger">
+
+                           </figure>
 
                         </section>
 
@@ -45,6 +51,8 @@
                 <div class="mid-row">
                     <div class="mid-row-top">
                         <h2>Niels Maas</h2>
+
+
                     </div>
                     <div class="mid-row-mid">
                         <img class ="bubble" src="../images/profile-picture.png" alt="">
@@ -120,5 +128,50 @@
     <div><span class="dot"></span></div>
     <div><span class="dot"></span></div>
 </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>Popup Titel</h2>
+                <p>Dit is de inhoud van je popup.</p>
+                <button id="close-popup">Sluiten</button>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const bubble = document.querySelector('.bubble');
+                const popup = document.getElementById('popup');
+                const closePopupButton = document.getElementById('close-popup');
+                const popupOverlay = document.querySelector('.popup-overlay'); // Voeg deze regel toe
+
+                bubble.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                    popup.classList.add('popup-zoom-in');
+                    popupOverlay.style.display = 'block'; // Toon de overlay
+                });
+
+                closePopupButton.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                    popup.classList.remove('popup-zoom-in');
+                    popupOverlay.style.display = 'none'; // Verberg de overlay
+                });
+            });
+
+
+
+
+
+
+        </script>
+        <div class="popup" id="popup">
+            <!-- Zwarte overlay achtergrond -->
+            <div class="popup-overlay"></div>
+            <div class="popup-content">
+                <h2>Popup Titel</h2>
+                <p>Dit is de inhoud van je popup.</p>
+                <button id="close-popup">Sluiten</button>
+            </div>
+        </div>
+
+
 </body>
 </html>
