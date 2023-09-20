@@ -699,10 +699,16 @@ div .dot {
 }
 
 
-.footer {
+footer {
     height: 10em;
     width: 100vw;
     background: #092327;
+}
+
+footer h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5em;
 }
 
 /*media queries*/
