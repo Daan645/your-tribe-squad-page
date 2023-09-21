@@ -43,4 +43,4 @@ Op het startscherm van de website zie je verschillende bubbels, elk met een foto
 
 ### Klikken op een kaartje
 
-Wanneer je op een kaartje klikt, wordt een nieuw scherm geopend met gedetailleerde informatie over de klasgenoot. Hier vind je mogelijk aanvullende informatie zoals contactgegevens, hobby's en interesses.
+Wanneer je op een kaartje klikt, wordt er een nieuw scherm geopend met gedetailleerde informatie over de klasgenoot. Hier vind je mogelijk aanvullende informatie zoals contactgegevens, hobby's en interesses.
