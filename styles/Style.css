@@ -1,11 +1,14 @@
-/*
-Color pallete
-1: Gunmetal = #092327
-2: Dark slate gray = #0B5351 
-3: light sea green = #00A9A5
-4: Air Force Blue = #4E8098
-5: Light Sky Blue = #90C2E7
-*/
+oude code
+
+
+    /*
+    Color pallete
+    1: Gunmetal = #092327
+    2: Dark slate gray = #0B5351
+    3: light sea green = #00A9A5
+    4: Air Force Blue = #4E8098
+    5: Light Sky Blue = #90C2E7
+    */
 
 * {
     padding: 0;
@@ -60,7 +63,7 @@ main {
 
 article {
 
-margin: auto;
+    margin: auto;
     border-radius: 10em;
     justify-content: center;
 
@@ -713,10 +716,10 @@ footer h3{
 
 /*media queries*/
 @media only screen and (max-width: 650px){
-.header{
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-}
+    .header{
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
 
 }
